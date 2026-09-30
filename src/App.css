@@ -1,0 +1,45 @@
+body {
+  background-color: #000;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-anchor: none;
+}
+
+.card-slot {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+img {
+  max-width: min(50vh, 100%);
+  height: auto;
+}
+
+.card-fallback,
+.sentinel {
+  color: #ccc;
+}
+
+.sentinel {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sentinel button {
+  color: inherit;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
